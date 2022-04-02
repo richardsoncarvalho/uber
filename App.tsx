@@ -1,11 +1,16 @@
 import React from 'react';
+
+import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Home } from './src/screens/Home';
+
+import { Main } from './src/navigation/Main';
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <Home />
+      <NavigationContainer>
+        <Main />
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 }
